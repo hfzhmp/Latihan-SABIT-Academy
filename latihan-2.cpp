@@ -33,11 +33,7 @@ int main(){
       jam = total / 3600;
       menit = (total % 3600) / 60;
       detik = total % 60;
-      if(jam < 1){
-        cout << "Jenis kendaraan [Mobil/Motor] : " << kendaraan << endl;
-        cout << "Waktu parkir : " << jam << " Jam, " << menit << " Menit, " << detik << " Detik. \n";
-        cout << "Total Biaya Parkir : Rp " << biaya;
-      }else if (total > 3600){
+      if (total > 3600){
         if(kendaraan == "mobil" || kendaraan == "Mobil"){
           biaya += 3000 * jam;
           kendaraan = "Mobil";

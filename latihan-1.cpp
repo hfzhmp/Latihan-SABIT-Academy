@@ -16,15 +16,13 @@ int main(){
     menit = (total % 3600) / 60;
     detik = total % 60;
 
-    cout << "Waktu parkir :" << jam << " Jam, " << menit << " Menit, " << detik << " Detik. \n";
+    cout << "Waktu parkir: " << jam << " Jam, " << menit << " Menit, " << detik << " Detik. \n";
 
-    if(jam < 1){
-      cout << "total biaya parkir: Rp " << biaya;
-    }else if (total > 3600){
+    if (total > 3600){
       biaya += 2000 * jam;
     }
 
-    cout << "total biaya parkir: Rp " << biaya;
+    cout << "Total biaya parkir: Rp " << biaya;
 
   }
 
