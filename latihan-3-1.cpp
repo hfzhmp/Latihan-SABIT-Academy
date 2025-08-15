@@ -10,7 +10,7 @@ int main() {
   bool semuaSama = true;
 
   int elemenPertama = A[0];
-  for (int i = 1; i < n; ++i) {
+  for (int i = 1; i < n; i++) {
     if (A[i] != elemenPertama) {
       semuaSama = false;
       break; 
@@ -26,7 +26,7 @@ int main() {
   // Array B dengan salah satu elemen berbeda
   int B[n] = {7, 7, 5, 7, 7};
   elemenPertama = B[0];
-  for (int i = 1; i < n; ++i) {
+  for (int i = 1; i < n; i++) {
     if (B[i] != elemenPertama) {
       semuaSama = false;
       break; 
